@@ -39,12 +39,12 @@
                                 <td>
                                     @if (user.IsAdmin || (user.IsAdmin && user.IsGranted))
                                     {
-                                        
+                                        @String.Empty
                                     }
                                     else
                                     {
-                                        <a class="btn btn-danger" asp-controller="User" asp-action="Revoke" asp-route-id="@user.UserName" >Revoke Access</a>
-                                        <a class="btn btn-success" asp-controller="User" asp-action="Grant" asp-route-id="@user.UserName">Grant Access</a>
+                                        <a class="btn btn-danger" asp-controller="User" asp-action="Revoke" asp-route-id="@user.UserName" style="color:whitesmoke">Revoke Access</a>
+                                        <a class="btn btn-success" asp-controller="User" asp-action="Grant" asp-route-id="@user.UserName" style="color:whitesmoke">Grant Access</a>
                                     }
                                 </td>
                                 <td>

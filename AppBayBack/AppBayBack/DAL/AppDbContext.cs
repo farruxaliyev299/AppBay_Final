@@ -12,5 +12,6 @@ namespace AppBayBack.DAL
         }
 
         public DbSet<Feature> Features { get; set; }
+        public DbSet<Settings> Settings { get; set; }
     }
 }
