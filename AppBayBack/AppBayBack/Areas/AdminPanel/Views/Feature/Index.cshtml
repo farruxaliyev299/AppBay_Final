@@ -1,0 +1,69 @@
+﻿@model List<Feature>
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Features</h4>
+                  <a class="btn btn-primary" asp-action="Create" style="color:white">Add Feature</a>
+                  <div class="table-responsive pt-3">
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>
+                            #
+                          </th>
+                          <th>
+                            Image
+                          </th>
+                          <th>
+                            Title
+                          </th>
+                          <th>
+                            Description
+                          </th>
+                          <th>
+                           Settings
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          @foreach (var feat in Model)
+                         {
+                               <tr>
+                          <td>
+                            @count
+                          </td>
+                          <td>
+                            <img src="~/assets/images/@feat.Url"/>
+                          </td>
+                          <td>
+                            @feat.Title
+                          </td>
+                          <td>
+                            @feat.Description
+                          </td>
+                          <td>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@feat.Id">
+                                <i class="mdi mdi-delete"></i>
+                            </a>
+                             <a class="btn btn-warning" asp-action="Update" asp-route-id="@feat.Id">
+                                 <i class="mdi mdi-grease-pencil"></i>
+                            </a>
+                          </td>
+                            </tr>
+                            count++;
+                        }
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+
+

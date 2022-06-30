@@ -1,0 +1,32 @@
+﻿@model Feature
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add Feature</h4>
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="Photo">Select File</label>
+                    <input asp-for="Photo" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                    <span asp-validation-for="Photo"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title">Title</label>
+                    <input asp-for="Title" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <span asp-validation-for="Title"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description">Description</label>
+                    <input asp-for="Description" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <span asp-validation-for="Description"></span>
+                </div>
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <a class="btn btn-light" asp-action="Index">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+

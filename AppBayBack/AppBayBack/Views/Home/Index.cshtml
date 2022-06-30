@@ -1,0 +1,279 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--Main start-->
+<main>
+    <!--Welcome start-->
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="mobile-slider col-xl-6 col-12 d-flex">
+                    <div class="slider-image">
+                        <img src="~/assets/images/slider/screen1.jpg" width="215" height="320px">
+                    </div>
+                </div>
+                <div class="welcome-text col-xl-6 col-12 d-flex">
+                    <div>
+                        <div class="welcome-title">
+                            <h1>Responsive App Landing Page</h1>
+                        </div>
+                        <div class="welcome-desc">
+                            <p>
+                                Bootstrap Based Responsive Landing Page Template
+                            </p>
+                        </div>
+                        <div class="welcome-button d-inline-block">
+                            <a href="#" class="btn btn-success d-flex">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <div class="button-desc">
+                                    <p>
+                                        <span>Available on</span>
+                                        App Store
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Welcome end-->
+    <!--Features start-->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                @foreach (var feat in Model.Features)
+                {
+                    <div class="feat-item col-xl-4 col-12">
+                        <div class="feat-icon d-flex justify-content-center">
+                            <img src="~/assets/images/@feat.Url" />
+                        </div>
+                        <h3 class="feat-item-title">
+                            @feat.Title
+                        </h3>
+                        <p class="feat-item-desc">
+                            @feat.Description
+                        </p>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <!--Features end-->
+    <!--Showcase start-->
+    <section id="showcase">
+        <div class="container">
+            <div class="show-header">
+                <h2 class="sh-title blue">
+                    Modern & clean landing page theme
+                </h2>
+                <p class="sh-desc">
+                    Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle,
+                    sure cool.
+                </p>
+            </div>
+            <div class="sh-content">
+                <div class="row">
+                    <div class="sh-tablet col-xl-6 col-12 d-flex">
+                        <img src="/assets/images/tablet.png">
+                    </div>
+                    <div class="sh-content col-xl-6 col-12">
+                        <div class="sh-item">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-trophy"></i>
+                                <div>
+                                    <h3 class="sh-item-title blue">
+                                        Amazing features
+                                    </h3>
+                                    <p class="sh-item-desc">
+                                        Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle
+                                        primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay
+                                        mammasa mamma oo sa Daahng dawg.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sh-item">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-gear"></i>
+                                <div>
+                                    <h3 class="sh-item-title blue">
+                                        Fully customizeable
+                                    </h3>
+                                    <p class="sh-item-desc">
+                                        Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle
+                                        primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay
+                                        mammasa mamma oo sa Daahng dawg.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sh-item">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <div>
+                                    <h3 class="sh-item-title blue">
+                                        Clean & functional layout
+                                    </h3>
+                                    <p class="sh-item-desc">
+                                        Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle
+                                        primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay
+                                        mammasa mamma oo sa Daahng dawg.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Showcase end-->
+    <!--Ready section start-->
+    <section id="ready-start">
+        <div class="container">
+            <div class="rs-header">
+                <h2 class="rs-header-title blue">
+                    Ready to get started?
+                </h2>
+            </div>
+            <div class="rs-content">
+                <div class="row">
+                    <div class="rs-item col-xl-4 col-12">
+                        <div class="rs-item-wrapper">
+                            <div class="rs-item-header">
+                                <h3 class="rs-title">
+                                    Basic Plan
+                                </h3>
+                                <p>
+                                    For basic people
+                                </p>
+                                <p class="rs-price">
+                                    $9.99
+                                </p>
+                            </div>
+                            <div class="rs-item-main">
+                                <p>Phasellizzle brizzle</p>
+                                <p>Crizzle aliquizzle</p>
+                                <p>And a lot more gizzle</p>
+                            </div>
+                            <div class="rs-item-button">
+                                <a href="#" class="btn btn-success">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs-item col-xl-4 col-12 item-blue">
+                        <div class="rs-item-wrapper">
+                            <div class="rs-item-header">
+                                <h3 class="rs-title">
+                                    Super Plan
+                                </h3>
+                                <p>
+                                    For super people
+                                </p>
+                                <p class="rs-price">
+                                    $19.99
+                                </p>
+                            </div>
+                            <div class="rs-item-main">
+                                <p>Phasellizzle brizzle</p>
+                                <p>Crizzle aliquizzle</p>
+                                <p>And a lot more gizzle</p>
+                            </div>
+                            <div class="rs-item-button">
+                                <a href="#" class="btn btn-success">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs-item col-xl-4 col-12">
+                        <div class="rs-item-wrapper">
+                            <div class="rs-item-header">
+                                <h3 class="rs-title">
+                                    Awesome Plan
+                                </h3>
+                                <p>
+                                    For awesome people
+                                </p>
+                                <p class="rs-price">
+                                    $29.99
+                                </p>
+                            </div>
+                            <div class="rs-item-main">
+                                <p>Phasellizzle brizzle</p>
+                                <p>Crizzle aliquizzle</p>
+                                <p>And a lot more gizzle</p>
+                            </div>
+                            <div class="rs-item-button">
+                                <a href="#" class="btn btn-success">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Ready section end-->
+    <!--Comments start-->
+    <section id="comments">
+        <div class="container">
+            <div class="comments-header">
+                <p class="blue">What people say</p>
+            </div>
+            <div class="comments-slider">
+                <q>
+                    Etizzle laoreet doggy dope nisl. Dang pulvinizzle, ipsizzle dawg.
+                </q>
+                <blockquote class="blue">Martin Nizzle</blockquote>
+            </div>
+        </div>
+    </section>
+    <!--Comments end-->
+    <!--Contact us start-->
+    <section id="contact-us">
+        <div class="container">
+            <div class="cu-header">
+                <h2 class="blue">Contact us</h2>
+                <p class="cu-desc">
+                    Want to chat? Send us a message. We'd love to hear from you!
+                </p>
+            </div>
+            <div class="cu-form">
+                <div class="cu-form-wrapper">
+                    <form method="post">
+                        <div class="form-row d-flex justify-content-center">
+                            <div class="form-group col-xl-6 col-12">
+                                <label for="inputPassword4">Name</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                            <div class="form-group col-xl-6 col-12">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group text-area">
+                            <label for="inputAddress" class="d-block">Message</label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn btn-primary">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact us end-->
+</main>
+<!--Main end-->
