@@ -44,7 +44,7 @@ namespace AppBayBack.Areas.AdminPanel.Controllers
                 ModelState.AddModelError("", "Too many false attempts , plase try again in a few minutes");
                 return View(user);
             }
-            if (!userDb.IsAdmin)
+            if (!userDb.IsGranted && !userDb.IsAdmin)
             {
                 ModelState.AddModelError("", "Access denied , Wait for permisson by Admin");
                 return View(user);

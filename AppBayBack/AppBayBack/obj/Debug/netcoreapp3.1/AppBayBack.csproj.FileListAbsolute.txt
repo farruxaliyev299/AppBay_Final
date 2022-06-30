@@ -158,3 +158,4 @@ C:\Users\fatima\OneDrive\Masaüstü\BP201_Exam\AppBayBack\AppBayBack\bin\Debug\n
 C:\Users\fatima\OneDrive\Masaüstü\BP201_Exam\AppBayBack\AppBayBack\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\fatima\OneDrive\Masaüstü\BP201_Exam\AppBayBack\AppBayBack\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\fatima\OneDrive\Masaüstü\BP201_Exam\AppBayBack\AppBayBack\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\AdminAccount\Login.cshtml.g.cs
+C:\Users\fatima\OneDrive\Masaüstü\BP201_Exam\AppBayBack\AppBayBack\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\User\Index.cshtml.g.cs
