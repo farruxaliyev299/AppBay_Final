@@ -27,6 +27,13 @@ header{
         &:hover{
             color: #888888!important;
         }
+        .mobile-icon{
+            color: white;
+            background-color: #428bca;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+        }
     }
     .navbar-collapse{
         justify-content: flex-end;

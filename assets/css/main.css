@@ -31,6 +31,14 @@ header {
   color: #888888 !important;
 }
 
+.navbar .navbar-brand .mobile-icon {
+  color: white;
+  background-color: #428bca;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
 .navbar .navbar-collapse {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
